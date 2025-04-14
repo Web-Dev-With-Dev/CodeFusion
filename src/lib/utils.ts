@@ -8,7 +8,7 @@ export function cn(...inputs: ClassValue[]) {
 
 // Generate a unique ID
 export function generateId(): string {
-  return Math.random().toString(36).substring(2, 11);
+  return Math.random().toString(36).substring(2) + Date.now().toString(36);
 }
 
 // Format date string
